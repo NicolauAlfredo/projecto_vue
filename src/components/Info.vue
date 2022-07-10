@@ -9,9 +9,14 @@
             <li>JavaScript</li>
             <li>PHP</li>
         </ul>
+        <div>
+            <button @click="showEmail">{{ textoBotao }}</button>
+        </div>
         <p v-show="mostrar_email">Mande uma mensagem para: {{ email }}</p>
+        
         <p>Para acessar o meu portifólio basta <a v-bind:href="portfolio" target="_blank">clicar aqui</a></p>
-        <Picture/>
+      
+      <Picture/>
     </div>
 </template>
 
@@ -27,8 +32,19 @@
             return {
                 email: "nicolaualfredo@yahoo.com",
                 esta_trabalhando: false,
-                mostrar_email: true,
-                portfolio: "https://www.google.com"
+                mostrar_email: false,
+                portfolio: "https://www.google.com",
+                textoBotao: "Mostrar e-mail"
+            }
+        },
+        methods: {
+            showEmail() {
+                this.mostrar_email = !this.mostrar_email
+                if(!this.mostrar_email) {
+                    this.textoBotao = "Mostrar e-mail"
+                } else {
+                    this.textoBotao = "Esconder e-mail"
+                }
             }
         }
     }

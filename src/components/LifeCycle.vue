@@ -14,12 +14,20 @@
             setTimeout(() => {
                 this.nome = 'Nicolau'
             }, 1000)
-            
+
+            this.lifeCycle()            
         },
         mounted() {
             setTimeout(() => {
                 this.nome = 'Alfredo'
             }, 2000)
+
+            this.lifeCycle()
+        },
+        methods: {
+            lifeCycle() {
+                consloe.log("Foi...")
+            }
         }
     }
 </script>
