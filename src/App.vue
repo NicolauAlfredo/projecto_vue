@@ -2,7 +2,7 @@
     <First/>
 </template>
 
-<script>
+<script> 
     import First from './components/First.vue'
     import LifeCycle from './components/LifeCycle.vue' 
 
