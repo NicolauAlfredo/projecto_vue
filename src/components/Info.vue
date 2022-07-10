@@ -14,9 +14,9 @@
         </div>
         <p v-show="mostrar_email">Mande uma mensagem para: {{ email }}</p>
         
-        <p>Para acessar o meu portifólio basta <a v-bind:href="portfolio" target="_blank">clicar aqui</a></p>
+        <p class="portifolio">Para acessar o meu portifólio basta <a v-bind:href="portfolio" target="_blank">clicar aqui</a></p>
       
-      <Picture/>
+      <Picture />
     </div>
 </template>
 
