@@ -1,14 +1,16 @@
 <template>
-    <first/>
+    <First/>
 </template>
 
 <script>
-    import first from './components/first.vue'
+    import First from './components/First.vue'
+    import LifeCycle from './components/LifeCycle.vue' 
 
     export default {
         name: "App",
         components: {
-            first
+            First,
+            LifeCycle
         }
     }
 </script>
