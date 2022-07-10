@@ -11,10 +11,15 @@
             }
         },
         created() {
-            this.nome = 'Nicolau'
+            setTimeout(() => {
+                this.nome = 'Nicolau'
+            }, 1000)
+            
         },
         mounted() {
-            this.nome = "Alfredo"
+            setTimeout(() => {
+                this.nome = 'Alfredo'
+            }, 2000)
         }
     }
 </script>
