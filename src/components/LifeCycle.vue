@@ -12,6 +12,9 @@
         },
         created() {
             this.nome = 'Nicolau'
+        },
+        mounted() {
+            this.nome = "Alfredo"
         }
     }
 </script>
