@@ -10,17 +10,25 @@
             <li>PHP</li>
         </ul>
         <p v-show="mostrar_email">Mande uma mensagem para: {{ email }}</p>
+        <p>Para acessar o meu portifólio basta <a v-bind:href="portfolio" target="_blank">clicar aqui</a></p>
+        <Picture/>
     </div>
 </template>
 
 <script>
+    import Picture from './Picture.vue'
+
     export default {
         name: 'Info',
+        components: {
+            Picture
+        },
         data() {
             return {
                 email: "nicolaualfredo@yahoo.com",
                 esta_trabalhando: false,
-                mostrar_email: true
+                mostrar_email: true,
+                portfolio: "https://www.google.com"
             }
         }
     }
